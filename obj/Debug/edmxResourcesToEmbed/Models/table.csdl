@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="officeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="type_">
+    <Key>
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="type" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="officeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="type_" EntityType="Self.type_" />
+  </EntityContainer>
+</Schema>
